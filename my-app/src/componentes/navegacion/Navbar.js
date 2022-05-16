@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-black">
             <div className="container-fluid">
                 <Link to='/'>
                     <img src='./coderhouse-logo.png' width='70'/>
