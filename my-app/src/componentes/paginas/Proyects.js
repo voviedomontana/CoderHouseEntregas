@@ -2,9 +2,10 @@ import React from 'react'
 
 const Proyects = () => {
   return (
-    <div>
-        <h1>This are my proyects</h1>
-    </div>
+  <div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping"/>
+  </div>
   )
 }
 
