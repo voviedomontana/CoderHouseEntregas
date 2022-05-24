@@ -5,6 +5,7 @@ import Experiences from './componentes/paginas/Experiences';
 import Home from './componentes/paginas/Home';
 import Proyects from './componentes/paginas/Proyects';
 import ItemListContainer from './componentes/ItemListContainer';
+import ItemCount from './componentes/ItemCount';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       <h2>Portfolio React Valentino Oviedo</h2>
       <div className='general-container'>
         <ItemListContainer title={'¡Bienvenido a React!'}/>
+        <ItemCount initial={0} stock={3}/>
       </div>
     </div>
   );
