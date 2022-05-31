@@ -43,7 +43,7 @@ function App() {
           <Route path='/Experiences' component={<Experiences/>}/>
         </Routes>
       </Router>
-      <h2>Portfolio React Valentino Oviedo</h2>
+      <h2></h2>
       <div className='general-container'>
         <ItemListContainer title={'Productos Recomendados'} products={productos}/>
       </div>
