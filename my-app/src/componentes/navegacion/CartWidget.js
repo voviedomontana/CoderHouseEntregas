@@ -5,7 +5,7 @@ const divStyle = {};
 const CartWidget = () => {
   return (
     <div style={divStyle}>
-        <button type="button" class="btn btn-light">
+        <button type="button" className="btn btn-light">
             <FontAwesomeIcon icon={faShoppingCart}/>
         </button>
     </div>

@@ -19,11 +19,11 @@ const ItemCount = (props) => {
     <div>
       <h8>Cantidad: {count}</h8> {/* 1 (as we expect) */}
       <p> Stock: {props.stock}</p>
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary btn-sm" onClick={addOne}>
+      <div className="btn-group" role="group" aria-label="Basic example">
+        <button type="button" className="btn btn-primary btn-sm" onClick={addOne}>
           +1
         </button>
-        <button type="button" class="btn btn-primary btn-sm" onClick={lessOne}>
+        <button type="button" className="btn btn-primary btn-sm" onClick={lessOne}>
           -1
         </button>
       </div>

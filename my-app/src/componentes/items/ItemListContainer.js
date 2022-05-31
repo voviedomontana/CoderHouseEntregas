@@ -4,7 +4,7 @@ import Item from './Item';
 const ItemListContainer = ({ title, products }) => {
   console.log(products.length)
   return (
-    <div class='product-list-container'>
+    <div className='product-list-container'>
       <h4> {title} </h4>
       {products.map(({ title, price, image, image1, image2, description, stock }) => {
         return (

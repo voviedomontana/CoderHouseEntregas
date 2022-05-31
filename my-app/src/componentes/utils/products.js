@@ -26,4 +26,15 @@ const productos = [
     
   ];
 
+  const productfordetail = 
+    {
+      title: 'Apple Watch',
+      price: 1400,
+      image:'applewatch.jpg',
+      description: 'Apple Watch Series 3 GPS - 42mm Space Grey/Black Sport Band',
+      stock: 10,
+      id: 3,
+    }
+
   export default productos;
+  export {productfordetail}

@@ -1,10 +1,10 @@
 import './App.css';
 import {BrowserRouter as Router,Route, Routes} from 'react-router-dom'
 import Navbar from './componentes/navegacion/Navbar';
-import Experiences from './componentes/paginas/Experiences';
 import Home from './componentes/paginas/Home';
-import Proyects from './componentes/paginas/Proyects';
-import ItemListContainer from './componentes/items/ItemListContainer';
+import Products from './componentes/paginas/Products'
+import Contact from './componentes/paginas/Contact'
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import { useState, useEffect } from 'react';
 import productos from './componentes/utils/products';
 
@@ -38,14 +38,13 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route path='/' exact component={<Home/>}/>
-          <Route path='/Proyects' component={<Proyects/>}/>
-          <Route path='/Experiences' component={<Experiences/>}/>
+          <Route path='/'  element={<Home/>}/>
+          <Route path='/Products' element={<Products/>}/>
+          <Route path='/Contact' element={<Contact/>}/>
         </Routes>
       </Router>
-      <h2></h2>
       <div className='general-container'>
-        <ItemListContainer title={'Productos Recomendados'} products={productos}/>
+      <ItemDetailContainer/>
       </div>
     </div>
   );
