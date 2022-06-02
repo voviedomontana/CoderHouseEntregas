@@ -16,13 +16,13 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to='/'>Home</Link>
+                            <Link className="nav-link" to='/Productos/Celulares'>Celulares</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to='/Products'>Products</Link>
+                            <Link className="nav-link" to='/Productos/Computadoras'>Computadoras</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to='/Contact'>Contact</Link>
+                            <Link className="nav-link" to='/Productos/Relojes'>Relojes</Link>
                         </li>
                     </ul>
                     <CartWidget/>

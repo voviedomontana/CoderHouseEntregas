@@ -1,16 +1,14 @@
 import './App.css';
-import {BrowserRouter as Router,Route, Routes} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './componentes/navegacion/Navbar';
-import Home from './componentes/paginas/Home';
-import Products from './componentes/paginas/Products'
-import Contact from './componentes/paginas/Contact'
-import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
-import { useState, useEffect } from 'react';
-import productos from './componentes/utils/products';
-
-
+import Detail from './componentes/paginas/Detail';
+import Products from './componentes/paginas/Products';
+import Celulares from './componentes/paginas/Celulares';
+import Computadoras from './componentes/paginas/Computadoras';
+import Relojes from './componentes/paginas/Relojes';
 
 function App() {
+  /*
   const [setProducts] = useState([])
     
     useEffect( () => {
@@ -32,20 +30,20 @@ function App() {
                 resolve(productos)
             }, 4000)
         })
-    }  
+    }  */
   return (
     <div className="App">
       <Router>
-        <Navbar/>
+        <Navbar />
         <Routes>
-          <Route path='/'  element={<Home/>}/>
-          <Route path='/Products' element={<Products/>}/>
-          <Route path='/Contact' element={<Contact/>}/>
+          <Route path="/" element={<Products/>} />
+          <Route path="/Product/Detail" element={<Detail/>} />
+          <Route path="/Productos/Celulares" element={<Celulares/>} />
+          <Route path="/Productos/Computadoras" element={<Computadoras/>} />
+          <Route path="/Productos/Relojes" element={<Relojes/>} />
         </Routes>
       </Router>
-      <div className='general-container'>
-      <ItemDetailContainer/>
-      </div>
+      <div className="general-container"></div>
     </div>
   );
 }

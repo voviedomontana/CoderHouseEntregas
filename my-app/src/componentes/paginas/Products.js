@@ -1,13 +1,14 @@
-import React from 'react'
-import ItemListContainer from '../items/ItemListContainer'
-import productos from '../utils/products'
+import React from 'react';
+import ItemListContainer from '../items/ItemListContainer';
+import productos from '../utils/products';
 
 const Products = () => {
   return (
     <div>
-        <h1>Job Experiences</h1>
+      <h3>Listado de Productos</h3>
+      <ItemListContainer title="Bienvenidos a react!" productos={productos} />
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
