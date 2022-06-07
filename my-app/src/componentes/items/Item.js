@@ -1,12 +1,11 @@
 import React from 'react';
 import ItemCount from './ItemCount';
 import { Link } from 'react-router-dom';
-const Item = ({ title, price, image, description, stock }) => {
+const Item = ({ title, price, image, description, stock, id }) => {
   return (
     <div className="container py-5">
       <div className="row text-center text-white mb-5">
-        <div className="col-lg-7 mx-auto">
-        </div>
+        <div className="col-lg-7 mx-auto"></div>
       </div>
       <div className="row">
         <div className="col-lg-8 mx-auto">
@@ -14,7 +13,7 @@ const Item = ({ title, price, image, description, stock }) => {
             <li className="list-group-item">
               <div className="media align-items-lg-center flex-column flex-lg-row p-3">
                 <div className="media-body order-2 order-lg-1">
-                      <h5 className="mt-0 font-weight-bold mb-2">{title} </h5>          
+                  <h5 className="mt-0 font-weight-bold mb-2">{title} </h5>
                   <p className="font-italic text-muted mb-0 small">
                     {description}
                   </p>
@@ -38,17 +37,16 @@ const Item = ({ title, price, image, description, stock }) => {
                     </ul>
                   </div>
                 </div>
-                <Link to='/Product/Detail'>
-                <img
-                  src={image}
-                  width="200"
-                  className="ml-lg-5 order-1 order-lg-2"
-                />
+                <Link to={`/product/${id}`}>
+                  <img
+                    src={`../${image}`}
+                    width="200"
+                    className="ml-lg-5 order-1 order-lg-2"
+                  />
                 </Link>
               </div>
             </li>
             <h6 className="font-weight-bold my-2">$ {price}</h6>
-            <ItemCount initial={0} stock={stock} />
           </ul>
         </div>
       </div>

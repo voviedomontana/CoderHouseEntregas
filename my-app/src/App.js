@@ -37,7 +37,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Products/>} />
-          <Route path="/Product/Detail" element={<Detail/>} />
+          <Route path="/Product/:id" element={<Detail />} />
           <Route path="/Productos/Celulares" element={<Celulares/>} />
           <Route path="/Productos/Computadoras" element={<Computadoras/>} />
           <Route path="/Productos/Relojes" element={<Relojes/>} />

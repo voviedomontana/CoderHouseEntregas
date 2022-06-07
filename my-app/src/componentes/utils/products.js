@@ -33,7 +33,7 @@ const productos = [
       category: 'computadora',
       description: '128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front Camera A12 Bionic Chip Processor',
       stock: 10,
-      id: 3,
+      id: 4,
     },
     {
       title: 'Lenovo',
@@ -42,7 +42,7 @@ const productos = [
       category: 'computadora',
       description: '128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front Camera A12 Bionic Chip Processor',
       stock: 10,
-      id: 3,
+      id: 5,
     },
     {
       title: 'MSI',
@@ -51,7 +51,7 @@ const productos = [
       category: 'computadora',
       description: '128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front Camera A12 Bionic Chip Processor',
       stock: 10,
-      id: 3,
+      id: 6,
     },
     {
       title: 'Android SmartWatch',
@@ -60,7 +60,7 @@ const productos = [
       category: 'reloj',
       description: '128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front Camera A12 Bionic Chip Processor',
       stock: 10,
-      id: 3,
+      id: 7,
     },
     {
       title: 'Huawei SmartWatch',
@@ -69,7 +69,7 @@ const productos = [
       category: 'reloj',
       description: '128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front Camera A12 Bionic Chip Processor',
       stock: 10,
-      id: 3,
+      id: 8,
     },
     {
       title: 'Apple Watch',
@@ -78,7 +78,7 @@ const productos = [
       category: 'reloj',
       description: 'Apple Watch Series 3 GPS - 42mm Space Grey/Black Sport Band',
       stock: 10,
-      id: 3,
+      id: 9,
     }
     
   ];
