@@ -6,6 +6,7 @@ import Products from './componentes/paginas/Products';
 import Celulares from './componentes/paginas/Celulares';
 import Computadoras from './componentes/paginas/Computadoras';
 import Relojes from './componentes/paginas/Relojes';
+import {CartProvider} from './componentes/CartContext/CarContext'
 
 function App() {
   /*
@@ -32,6 +33,7 @@ function App() {
         })
     }  */
   return (
+    <CartProvider>
     <div className="App">
       <Router>
         <Navbar />
@@ -45,6 +47,7 @@ function App() {
       </Router>
       <div className="general-container"></div>
     </div>
+    </CartProvider>
   );
 }
 

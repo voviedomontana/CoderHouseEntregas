@@ -1,5 +1,5 @@
 import React from 'react';
-const ItemCount = ({cantidad, setCantidad, setShowButton}) => {
+const ItemCount = ({cantidad, setCantidad, setShowButton, onAdd}) => {
   const addProduct = () =>{
     setCantidad(cantidad + 1)
   }
@@ -11,7 +11,7 @@ const ItemCount = ({cantidad, setCantidad, setShowButton}) => {
     <p>{cantidad}</p>
     <button>-</button>
   </div>
-  <button onClick={() => setShowButton(true)}>Agregar Producto</button>
+  <button onClick={() => {onAdd(cantidad)}}> AGREGAR PRODUCTO </button>
   </>
 )
 }

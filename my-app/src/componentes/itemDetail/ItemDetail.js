@@ -1,9 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import  './detail.css'
 import ItemCount from '../items/ItemCount'
-import { Link } from 'react-router-dom'
+import CartContext from '../CartContext/CarContext'
+
 
 const ItemDetail = ({data}) => {
+
+    const {  addToCart, isInCart, deleteItem  } = useContext(CartContext)
+
+    const sendItemToCart = (qty) => {
+        addToCart({...data, cantidad: qty})
+    }
+
     const [cantidad, setCantidad] = useState(0)
     const [showButton, setShowButton] = useState(false)
 
@@ -32,11 +40,7 @@ const ItemDetail = ({data}) => {
                             <h2 className="mt-5">
                             ${data.price}<small className="text-success">(36%off)</small>
                             </h2>
-                            {!showButton ? 
-                            <ItemCount cantidad={cantidad} setCantidad={setCantidad} setShowButton={setShowButton} />
-                            :
-
-                            <button><Link to='/cart'>Terminar la compra</Link></button> }
+                            {isInCart(data.id) ? <button onClick={() => {deleteItem(data.id)}}> Modificar Compra </button> : <ItemCount cantidad={cantidad} stock={data.stock} setCantidad={setCantidad} onAdd={sendItemToCart}/>}
                     </div>
                 </div>
             </div>
