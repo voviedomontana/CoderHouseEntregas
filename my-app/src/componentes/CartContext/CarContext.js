@@ -36,7 +36,6 @@ export const CartProvider = ({children}) => {
         deleteItem,
         clearCart
     }
-
   return (
     <CarContext.Provider value={values}>{children}</CarContext.Provider>
   )

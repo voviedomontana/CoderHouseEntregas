@@ -6,6 +6,7 @@ import Products from './componentes/paginas/Products';
 import Celulares from './componentes/paginas/Celulares';
 import Computadoras from './componentes/paginas/Computadoras';
 import Relojes from './componentes/paginas/Relojes';
+import Cart from './componentes/paginas/Cart';
 import {CartProvider} from './componentes/CartContext/CarContext'
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/cart" element={<Cart />}/>
           <Route path="/" element={<Products/>} />
           <Route path="/Product/:id" element={<Detail />} />
           <Route path="/Productos/Celulares" element={<Celulares/>} />
