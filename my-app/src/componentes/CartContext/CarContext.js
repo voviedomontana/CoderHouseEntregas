@@ -20,6 +20,9 @@ export const CartProvider = ({children}) => {
         
 
     }
+    const totalCartPrice = () => {
+        return cart.reduce((acc, item) => ( acc + (item.quantity * item.price) ), 0);
+    }
 
     const deleteItem = (id) => {
         const auxCart = cart.filter(prod => prod.id !== id)
@@ -34,11 +37,13 @@ export const CartProvider = ({children}) => {
         addToCart,
         isInCart,
         deleteItem,
-        clearCart
+        clearCart,
+        totalCartPrice
     }
   return (
     <CarContext.Provider value={values}>{children}</CarContext.Provider>
   )
 
 }
+
 export default CarContext

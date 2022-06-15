@@ -36,6 +36,7 @@ const ItemDetail = ({data}) => {
                             <ul className="list-unstyled">
                                 <li><i className="fa fa-check text-success product-details"></i>{data.description}</li>
                                 </ul>
+                            <h4>Stock disponible: {data.stock}</h4>
                         </div>
                             <h2 className="mt-5">
                             ${data.price}<small className="text-success">(36%off)</small>

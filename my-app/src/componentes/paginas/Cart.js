@@ -9,7 +9,7 @@ const Cart = () => {
     console.log(cart)
     return(
         <div>
-            <CartListProduct cart={cart}/>
+            <CartListProduct cart={cart} quantity={cart.length}/>
         </div>
     )
 }
