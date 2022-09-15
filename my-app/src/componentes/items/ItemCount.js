@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ItemCount = ({
+const Counter = ({
   cantidad,
   setCantidad,
   onAdd,
@@ -49,4 +49,4 @@ const ItemCount = ({
   );
 };
 
-export default ItemCount;
+export default Counter;

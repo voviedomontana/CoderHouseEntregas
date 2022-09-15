@@ -57,7 +57,6 @@ const CartProducts = ({ title, price, image, description, cantidad, id }) => {
             </div>
           </div>
         </div>
-        <p>Total: ${totalCartPrice(cart)} </p>
       </div>
     </div>
   );
